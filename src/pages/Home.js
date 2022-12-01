@@ -4,6 +4,8 @@ import { ProductContext } from "../contexts/ProductContext";
 // import components
 import Product from "../components/Product";
 import Hero from "../components/Hero";
+import Aboutpng from "../img/aboutpng.png";
+import Contact from "../img/contact.png";
 
 const Home = () => {
   // get products from product context
@@ -46,6 +48,46 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <div>
+        <div
+          className=" flex justify-center items-center"
+          style={{ paddingBottom: "50px" }}
+        >
+          <img
+            src={Aboutpng}
+            alt=""
+            style={{
+              width: "50%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          />
+        </div>
+        <div
+          style={{
+            width: "100%",
+            height: "1px",
+            backgroundColor: "black",
+            marginBottom: "10px",
+          }}
+        ></div>
+        <div
+          className=" flex justify-center items-center"
+          style={{ paddingBottom: "50px" }}
+        >
+          <img
+            src={Contact}
+            alt=""
+            style={{
+              width: "20%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          />
+        </div>
+      </div>
     </div>
   );
 };
